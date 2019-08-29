@@ -1,10 +1,10 @@
 # **2019-08-26**: Introduktion
 **Sammanfattning:**
-
+Bara information. Ingen förberedande
 
 ## Att göra:
-- [ ] Övat
-- [ ] Repeterat
+- [x] Övat
+- [x] Repeterat
 
 
 # **2019-08-29**:
