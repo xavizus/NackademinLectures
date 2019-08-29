@@ -19,7 +19,7 @@ I JS så börjar det alltid på 0.
 
 ## **Deklaration av variabler**
 
-Föredra att använda deklarationen **let** framför **var**.
+Föredra att använda deklarationen <ins>**let**</ins> framför **var**.
 
 **Var** deklareras i global scope
 
