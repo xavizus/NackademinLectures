@@ -10,10 +10,11 @@ Bara information. Ingen förberedande
 # **2019-08-29**:
 **Sammanfattning:**
 
+Gick igenom basics of all basics i JS
 
 ## Att göra:
-- [ ] Övat
-- [ ] Repeterat
+- [X] Övat
+- [X] Repeterat
 
 # **2019-08-30**:
 **Sammanfattning:**
