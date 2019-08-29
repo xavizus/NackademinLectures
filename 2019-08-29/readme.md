@@ -24,9 +24,38 @@ Föredra att använda deklarationen <ins>**let**</ins> framför **var**.
 **Var** deklareras i global scope
 
 **Let** deklareras i lokal scope
+
+## **Operatorer**
+
+Atrimetiska operatorer:
+- **+** Addition
+- **-** Subtration
+- **\*** Multiplication
+- **/** Division
+- **%** Modulus (Reminder)
+- **++** Increment
+    - Kan skrivas med y++ , innebär att vi ökar värdet med 1 efter beräkningen
+    - ++y, ökar värdet med 1 före beräkningen.
+- **--** Decrement
+    - Har samma funktion som Increment
+
+## **Komentarer**
+`// En rad kommentar`
+
+`/* Fler rader `
+
+`kod*/`
+
+
 ## **Tips** 
-Använd dig av jsfiddle.net
+Använd dig av [jsfiddle.net]() för att testa en del av din kod.
 
 Skriv kod med engelska variabler
 
 All kodrad i JS slutar med semicolon **;**
+
+`let x = y + 4; // kan förkortas `
+
+`y= y+4; // Kan förkortas ytterligare`
+
+`y+=4`
