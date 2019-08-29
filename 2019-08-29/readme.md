@@ -69,7 +69,8 @@ else {}
 ````
 Du kan också skriva enrads if-satser om det är korta förändringar du vill göra exempelvis:
 ````javascript
-if(5<7)?"True":"False";
+let isThisTrue = (5<7)?"True":"False";
+console.log(isThisTrue);
 ````
 
 ### **Operatorer**
