@@ -46,6 +46,66 @@ Atrimetiska operatorer:
 
 `kod*/`
 
+## **Logiska beslut**
+
+````javascript
+if (true) { 
+    Print("True");
+
+} else { 
+
+print("Flase");
+
+}
+````
+
+If-Else satser går att göra på följande sätt:
+````javascript
+if (true) {}
+
+else if (false){}
+
+else {}
+````
+Du kan också skriva enrads if-satser om det är korta förändringar du vill göra exempelvis:
+````javascript
+if(5<7)?"True":"False";
+````
+
+### **Operatorer**
+Operator | beskrivning
+---      | ---        |
+> | Större än
+< | Mindre än
+== | Lika med
+!= | inte lika med
+&& | Och
+\|\| | eller
+! | Inte
+=== | Att värdet och data typen är lika
+!== | Att värdet och data typen inte är lika med.
+
+### **Switch**
+Går att använda med både strings och numbers. Nedan exempel är för numbers
+````javascript
+switch(data) {
+    case 1:
+        break;
+    case 2: 
+        break;
+}
+````
+Nedan för exempel är för strings
+````javascript
+switch("data") {
+    case "data":
+        break;
+    case "Nothing":
+        break;
+    default:
+        break;
+}
+````
 
 ## **Tips** 
 Använd dig av [jsfiddle.net]() för att testa en del av din kod.
