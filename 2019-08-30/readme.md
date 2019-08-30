@@ -1,6 +1,6 @@
 # **2019-08-30**
 ## **Sammanfattning**
-Loopar och 
+Loopar och funktioner
 
 ## **Vad är en loop**
 En look är en upprepande av en kod.
@@ -20,7 +20,7 @@ Finns 3 olika typer av loopar:
     ````
 
 
-## **Array**
+### **Array**
 En array innehåller flera variabler av samma typ.
 Arrays börjar alltid på 0.
 
@@ -115,6 +115,117 @@ let x = numbers.pop();
 console.log(x); //ger värdet 45.
 ````
 
+Ofärdigt
 metoden Push lägger till värdet i slutet
 Pop tar 
 shift tar bort första värdet
+
+--
+## **Funktioner**
+För att skapa en funktion, gör du genom följande sätt:
+````javascript
+function hello() {
+    console.log("Hello");
+}
+````
+För att anropa funktionen, så skriver du bara följande:
+````javascript
+hello();
+````
+
+Du kan ge funktioner parametrar:
+````javascript
+function hello(name) {
+    console.log("Hello " +  name);
+}
+
+hello("Sven");
+````
+Du kan ha flera parametrar:
+````javascript
+function hello(name, age) {
+    console.log("Hello %s your age are %s years.",name,age);
+}
+
+hello("Stephan",27);
+````
+
+Returnation av värden.
+
+````javascript
+function feetToMeter(feet) {
+    let meter = feet / 3.2808;
+    return meter;
+}
+
+let x = feetToMeter(33);
+
+console.log(x);
+````
+
+Du kan returnera värden direkt utan att använda dig av variabel.
+
+````javascript
+function rectArea(width, height) {
+    return width*height;
+}
+console.log(rectArea);
+````
+Du kan kalla en funktion med en funktion som parameter:
+````javascript
+function feetToMeter(feet) {
+    return feet / 3.2808;
+}
+
+function rectArea(b,h) {
+    return b*h
+}
+
+console.log(rectArea(feetToMeter(33),feetToMeter(10)));
+
+````
+
+Default värde i parametrar:
+(Viktigt! Default värden måste vara sist, alla värden efter första default värdet måste ha default parametrar)
+````javascript
+function hello (name, age = 10) {
+    console.log("%s %s",name,age);
+}
+hello("Stephanie");
+````
+
+Om det skickas med fler parametrar som funktionen inte klarar av så rekommenderas det att lägga till ... med variabelnamn på slutet
+
+````javascript
+funtion hello (name, age, ...rest) {
+    console.log (name + age);
+    console.log(rest);
+}
+
+hello ("Stephanie", 43, "Stockholm", "konstiga intressen");
+````
+
+Annonyma funktioner:
+````javascript
+let myFunction = function (name,age) {
+    console.log(name + age);
+}
+
+myFunc("Micke",43);
+````
+
+## **localStorage**
+Är ett sätt att spara data på användarens webbbrowser.
+
+````javascript
+localStorage.setItem("User","Kalle");
+````
+
+## **prompt**
+Är en ruta för att läsa in data från användaren.
+Alert är en ruta som 
+````javascript
+let name = prompt("Vad heter du");
+
+alert("Hej %s",name);
+````
