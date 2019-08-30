@@ -37,6 +37,7 @@ Du kan pre-definera arrays genom följande sätt:
 var numbers = [1,3,56,7];
 ````
 Array:n kommer då se ut som följande om man ska rita upp det grafiskt. Där den övre raden representerar indexet i arrayn och andra randen har värdet.
+
 | 0 | 1 | 2 | 3 |
 | --- | --- | --- | --- |
 | 1 | 3 | 56 | 7 |
