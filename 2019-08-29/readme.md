@@ -6,24 +6,38 @@ Vi använder oss av Visual Studio code under utbildningen.
 ## **Variabel typer**
 **Datatyper:**
 - **Boolean** - Sant eller falskt
-- **Null** - Värdet existerar
-- **Undefined** - Värde finns men vi vet inte.
+- **Null** - Värdet existerar inte
+- **Undefined** - Värde kanske finns men vi vet inte (typ som null, men att värdet inte kan tydas).
 - **Number** - Heltal, flytande tal
-- **BigInt** - *
+- **BigInt** - * Vi hoppade över informationen. Men kort och gott, det är en variabel som klarar större nummer än vanligt och kan endast vara heltal.
 - **String** - Strängar, uppbyggt av bokstäver
-- **Symbol** - (?)
+- **Symbol** - (?) - föreläsaren hoppade över detta.
 - **Object** - Objekt med metoder och variabler
-
-**Array:**
-I JS så börjar det alltid på 0.
 
 ## **Deklaration av variabler**
 
 Föredra att använda deklarationen <ins>**let**</ins> framför **var**.
 
-**Var** deklareras i global scope
+**Var** deklareras i global scope, vilket innebär att du kan använda variabeln över hela din kod.
 
-**Let** deklareras i lokal scope
+**Let** deklareras i lokal scope, dvs. i de brackets {} som koden körs i. Men variabeln ärvs om du inte initierar samma variabel under. Exempelvis:
+````javascript
+let x = 3;
+if (x < 4) {
+    let x = 2;
+    console.log(x); //Kommer att skriva ut 2.
+}
+console.log(x); //kommer att skriva ut 3.
+
+//Om du använder var istället:
+var y = 3;
+if (y < 4) {
+    var y = 4;
+    console.log(y); // kommer att skriva ut 4
+}
+console.log(y); //kommer att skriva ut 4
+
+````
 
 ## **Operatorer**
 
@@ -72,6 +86,10 @@ Du kan också skriva enrads if-satser om det är korta förändringar du vill g�
 let isThisTrue = (5<7)?"True":"False";
 console.log(isThisTrue);
 ````
+En viktig detalj på enrads if-satser är att du inte kan skriva detta i en IF-sats. Du får då kompileringsfel. Se exempel nedan:
+````javascript
+if(5<7) ? "True" : "False";
+````
 
 ### **Operatorer**
 Operator | beskrivning
@@ -96,7 +114,7 @@ switch(data) {
         break;
 }
 ````
-Nedan för exempel är för strings
+Nedan exempel är för strings
 ````javascript
 switch("data") {
     case "data":
@@ -111,9 +129,11 @@ switch("data") {
 ## **Tips** 
 Använd dig av [jsfiddle.net]() för att testa en del av din kod.
 
-Skriv kod med engelska variabler
+Skriv kod med engelska variabler och kommentera din kod på engelska så att andra förstår vad din kod gör.
 
 All kodrad i JS slutar med semicolon **;**
+
+Du kan korta ner matematiska uträkningar på enklare sätt. (Programmerare är lata).
 
 `let x = y + 4; // kan förkortas `
 
