@@ -1,4 +1,5 @@
 
+//Let the player choose a word
 let secretWord = prompt("Choose a word: ");
 
 //How many tries the player got
