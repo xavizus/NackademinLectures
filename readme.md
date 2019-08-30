@@ -1,14 +1,14 @@
 # **2019-08-26**: Introduktion
-**Sammanfattning:**
+## **Sammanfattning:**
 Bara information. Ingen förberedande
 
 ## Att göra:
-- [x] Övat
-- [x] Repeterat
+- [X] Övat
+- [X] Repeterat
 
 
 # **2019-08-29**:
-**Sammanfattning:**
+## **Sammanfattning:**
 
 Gick igenom basics of all basics i JS
 
@@ -17,9 +17,9 @@ Gick igenom basics of all basics i JS
 - [X] Repeterat
 
 # **2019-08-30**:
-**Sammanfattning:**
-
+## **Sammanfattning:**
+Gick igenom loopar, arrays och funktioner samt utförde några övningar.
 
 ## Att göra:
-- [ ] Övat
-- [ ] Repeterat
+- [X] Övat
+- [X] Repeterat
