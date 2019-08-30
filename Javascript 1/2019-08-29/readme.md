@@ -1,18 +1,45 @@
 # **Praktisk info**
-Vi använder oss av Visual Studio code under utbildningen.
+Under Javascript 1 kursen så vi använder oss av Visual Studio code under utbildningen.
 
 
 # **Variabler**
 ## **Variabel typer**
 **Datatyper:**
 - **Boolean** - Sant eller falskt
-- **Null** - Värdet existerar inte
-- **Undefined** - Värde kanske finns men vi vet inte (typ som null, men att värdet inte kan tydas).
+- **Null** - Detta värde måste bli plaserad i en variable. Betyder _inget_
+- **Undefined** - Variabeln är deklarerad, men inte definerad.
 - **Number** - Heltal, flytande tal
 - **BigInt** - * Vi hoppade över informationen. Men kort och gott, det är en variabel som klarar större nummer än vanligt och kan endast vara heltal.
 - **String** - Strängar, uppbyggt av bokstäver
 - **Symbol** - (?) - föreläsaren hoppade över detta.
 - **Object** - Objekt med metoder och variabler
+
+### **Förtydligande av Null och Undefined**
+Null och undefined är nästan liknande varandra. Det som skiljer dem ifrån är att, för att kunna få Null värdet, så måste det bli definerat. exempelvis:
+
+````javascript
+let thisIsNull = null;
+````
+
+Medan undefined är automatiskt, exempelvis när du inte ger din variabel något värde:
+````javascript
+let thisIsUndefined;
+````
+
+Den praktiska skillnaden mellan null och undefined är när du skickar över värdet i en funktion. 
+
+````javascript
+let thisIsNull = null;
+let thisIsUndefined;
+
+function Parameter(data = "test") {
+    console.log(data);
+}
+
+Parameter(thisIsNull); //Detta kommer skriva ut null.
+
+Parameter(thisIsUndefined); //Detta kommer skriva ut test
+````
 
 ## **Deklaration av variabler**
 
@@ -54,11 +81,19 @@ Atrimetiska operatorer:
     - Har samma funktion som Increment
 
 ## **Komentarer**
-`// En rad kommentar`
 
-`/* Fler rader `
+Du kan kommentera på två olika sätt:
 
-`kod*/`
+````javascript
+
+// En rad kommentar
+
+/* Fler rader 
+
+kod
+*/
+
+````
 
 ## **Logiska beslut**
 
@@ -68,7 +103,7 @@ if (true) {
 
 } else { 
 
-print("Flase");
+print("false");
 
 }
 ````
@@ -81,28 +116,28 @@ else if (false){}
 
 else {}
 ````
-Du kan också skriva enrads if-satser om det är korta förändringar du vill göra exempelvis:
+Du kan också skriva en-rads if-satser om det är korta förändringar du vill göra exempelvis:
 ````javascript
 let isThisTrue = (5<7)?"True":"False";
 console.log(isThisTrue);
 ````
-En viktig detalj på enrads if-satser är att du inte kan skriva detta i en IF-sats. Du får då kompileringsfel. Se exempel nedan:
+En viktig detalj på enrads if-satser är att du inte kan skriva detta i en IF-sats. Då får du kompileringsfel. Se exempel nedan:
 ````javascript
 if(5<7) ? "True" : "False";
 ````
 
 ### **Operatorer**
-Operator | beskrivning
----      | ---        |
-> | Större än
-< | Mindre än
-== | Lika med
-!= | inte lika med
-&& | Och
-\|\| | eller
-! | Inte
-=== | Att värdet och data typen är lika
-!== | Att värdet och data typen inte är lika med.
+| Operator | beskrivning |
+|---      | ---        |
+|> | Större än|
+|< | Mindre än|
+|== | Lika med|
+|!= | inte lika med|
+|&& | Och|
+|\|\| | eller|
+|! | Inte|
+|=== | Att värdet och data typen är lika|
+|!== | Att värdet och data typen inte är lika med.|
 
 ### **Switch**
 Går att använda med både strings och numbers. Nedan exempel är för numbers
@@ -131,12 +166,13 @@ Använd dig av [jsfiddle.net]() för att testa en del av din kod.
 
 Skriv kod med engelska variabler och kommentera din kod på engelska så att andra förstår vad din kod gör.
 
-All kodrad i JS slutar med semicolon **;**
+All kodrad i JS slutar med semicolon **;**, förutom funktioner och objekt.
 
-Du kan korta ner matematiska uträkningar på enklare sätt. (Programmerare är lata).
+Du kan korta ner matematiska uträkningar på ett enklare sätt. (Programmerare är lata).
+````javascript
+let x = y + 4; // kan förkortas 
 
-`let x = y + 4; // kan förkortas `
+y = y+4; // Kan förkortas ytterligare
 
-`y= y+4; // Kan förkortas ytterligare`
-
-`y+=4`
+y+=4; //Alla dessa tre gör exakt samma sak. förutom det första exemplet, där x = y + 4, då vi deklarerar en till variabel.
+````
