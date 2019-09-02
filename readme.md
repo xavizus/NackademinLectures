@@ -23,3 +23,11 @@ Gick igenom loopar, arrays och funktioner samt utförde några övningar.
 ## Att göra:
 - [X] Övat
 - [X] Repeterat
+
+# **2019-09-02**:
+## **Sammanfattning:**
+Genomgång av objekt och klasser samt stränghantering.
+## Att göra:
+
+- [] Övat
+- [] Repeterat
