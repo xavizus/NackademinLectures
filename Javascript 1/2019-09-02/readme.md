@@ -63,7 +63,7 @@ if (result > -1) {
 ````
 
 # Datum 
-Det finns ett objekt i Javascript som heter Date(). Den innehåller flera metoder.
+Det finns ett objekt i Javascript som heter Date(). Den innehåller flera metoder. Du hittar mer om Date på följande plats [W3schools Dates](https://www.w3schools.com/js/js_date_methods.asp)
 
 ````javascript
 let myDate = Date(); //Ger dagens datum och klockslag.
@@ -259,9 +259,9 @@ class Student {
 let elev = new Student("Kalle");
 ````
 
-Klasser kan också innehålla funktioner (metoder), dock skriver du inte ordet function, utan du skriver bara funktionsnamnet och paranteser.
+Klasser kan också innehålla funktioner. Från och med nu, så kommer vi kalla funktioner som finns i en klass för **metod**. För att skapa en metod så skriver du inte ordet function, utan du skriver bara metodnamnet och paranteser.
 
-Nedan exempel så skapar vi en funktion som heter greet.
+Nedan exempel så skapar vi en metod som heter greet.
 
 ````javascript
 class Student {
@@ -279,7 +279,7 @@ class Student {
 let elev = new Student("Kalle");
 ````
 
-För att anropa en funktion så skriver du din variabels namn med följt av en punkt och sedan metodens namn.
+För att anropa en metod så skriver du din variabels namn med följt av en punkt och sedan metodens namn.
 
 ````javascript
 class Student {
@@ -310,7 +310,7 @@ class Student {
     }
 
     greet() {
-        console.log("Hello " +  this.name); //Här lägger vi this med variabelns namn: this.name
+        console.log("Hello " +  this.name); //Här lägger vi this med variabel1ns namn: this.name
     }
 }
 
@@ -319,7 +319,7 @@ let elev = new Student("Kalle");
 elev.greet(); //kommer att skriva ut Hello Kalle.
 ````
 
-För att anropa en funktion i klassen så använder du också dig av this ordet.
+För att anropa en metod i klassen så använder du också dig av this ordet.
 
 ````javascript
 class Student {
@@ -336,4 +336,57 @@ class Student {
 }
 
 let elev = new Student("Kalle");// kommer att direkt skriva ut "Hello Kalle".
+````
+
+## Arv i klasser
+
+I objekthantering är det vanligt att du skapar en huvudklass, och sedan underklasser. T.ex. om du är en person, så kan du också vara en student.
+För att kunna ärva en klass så använder du ordet **extends**.
+För att konstruktör i underklassen ska kunna ärva ovan klassens konstruktör så behöver funktionen **super()** anropas i underklassen.
+
+````javascript
+class Person {
+    constructor() {
+        this.name = "";
+        this.hobbies = [];
+        this.height = 0;
+        this.profession = "";
+    }
+}
+
+class Student extends Person {
+    constructor() {
+        super(); //Kallar på constructor på föräldrarklassen.
+        this.courses = [];
+    }
+
+    greet() {
+        console.log("Hello student");
+    }
+}
+
+let student = new Student();
+````
+
+Annat exempel:
+
+````javascript
+class Login {
+    constructor(name,password) {
+        //Kolla att användaren är giltig
+    }
+    getUserName() {
+        //..
+    }
+    getUserEmail() {
+        //..
+    }
+}
+
+class LoginFacebook extends Login {
+    constructor(name,password) {
+        super(name,password);
+    }
+}
+
 ````

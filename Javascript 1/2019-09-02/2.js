@@ -4,10 +4,15 @@ class Rectangle {
         this.height = height;
 
         console.log(this.area());
+        console.log(this.circumference());
     }
 
     area() {
         return this.width * this.height;
+    }
+
+    circumference() {
+        return (this.width * 2) + (this.height * 2);
     }
 }
 
