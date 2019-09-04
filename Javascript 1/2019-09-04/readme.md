@@ -62,6 +62,7 @@ Href-attribut som länken ska skickas vidare till.
 ````
 
 ## Kommentarer i HTML
+
 För att kommentera i HTML är enkelt, du har sett mig göra det ovan.
 Först behöver du skriva in **\<!--** sedan skriver du din kommentar och sen slutar du med **--\>**.
 
@@ -91,7 +92,7 @@ Osorterad list skriver du som följande:
 ````
 
 ## OL, Ordered list
-Sorterad lista
+Sorterad lista med 1,2,3
 ````HTML
 <ol>
     <li>Lista 1</li>
@@ -100,7 +101,7 @@ Sorterad lista
 ````
 
 ## HTML-dokument
-Du skapar en HTML dokument 
+Du skapar en HTML dokument med flera olika taggar. Exempelvis:
 
 Rubriker
 h1
