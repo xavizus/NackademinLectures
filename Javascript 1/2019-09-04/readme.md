@@ -103,22 +103,22 @@ Sorterad lista med 1,2,3
 ## HTML-dokument
 Du skapar en HTML dokument med flera olika taggar. Exempelvis:
 
-Rubriker \
+Rubriker 
 - h1
 - h2
 - ..
 - h6
   
-Teckenstycken \
+Teckenstycken 
 - p
 - span
-Länkar \
+Länkar 
 - a
 - Bilder
 - img
-Block \
--div
-Listor \
+Block 
+- div
+Listor 
 - ol
 - ul
 
