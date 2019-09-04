@@ -103,23 +103,24 @@ Sorterad lista med 1,2,3
 ## HTML-dokument
 Du skapar en HTML dokument med flera olika taggar. Exempelvis:
 
-Rubriker
-h1
-h2
-..
-h6
-Teckenstycken
-p
-span
-Länkar
-a
-Bilder
-img
-Block
-div
-Listor
-ol
-ul
+Rubriker \
+- h1
+- h2
+- ..
+- h6
+  
+Teckenstycken \
+- p
+- span
+Länkar \
+- a
+- Bilder
+- img
+Block \
+-div
+Listor \
+- ol
+- ul
 
 ## Hur vet man att man har gjort rätt med HTML?
 Du kan använda dig av en validator.
