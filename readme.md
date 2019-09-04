@@ -42,7 +42,7 @@ Genomgång av objekt och klasser samt stränghantering.
 
 # **2019-09-04**
 ## **Sammanfattning**
-Genomgång av allt vi hittills gått igenom
+Genomgång av allt vi hittills gått igenom.
 
 ## Att göra:
 

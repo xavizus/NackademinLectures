@@ -1,23 +1,23 @@
+//Create a teacher class to store all teachers.
 class Teacher {
     constructor(teacherName) {
-        this.name = teacherName; 
+        this.name = teacherName;
         this.courses = [];
     }
 
     addCourse(newCourse) {
 
-        if(newCourse instanceof Course) {
+        if (newCourse instanceof Course) {
             this.courses.push(newCourse);
-        } 
-        else {
+        } else {
             console.log("You did not add a Class Course");
         }
-        
+
     }
 
 }
 
-
+//Create a 
 class Course {
     constructor(courseName) {
         this.name = courseName;
@@ -28,7 +28,7 @@ class Course {
     addBook(bookName) {
         this.books.push(bookName);
     }
-    
+
     set points(newCoursePoints) {
         this.coursePoints = newCoursePoints;
     }
