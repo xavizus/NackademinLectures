@@ -1,0 +1,32 @@
+td, th{
+    padding: 5px;
+    border: 1px solid black;
+}
+
+th {
+    text-align: left;
+    background-color: #777;
+}
+
+tr.headerRow{
+    background-color: #bbb;
+}
+
+input{
+    width: 75px;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px dashed #333;
+}
+
+input:focus{
+    outline: none;
+}
+
+col.greyCol{
+    background-color: #777;
+}
+
+table{
+    border-collapse: collapse;
+}
