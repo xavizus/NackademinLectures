@@ -1,4 +1,35 @@
-td, th{
+.header {
+    margin: 5px;
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+    margin: 5px;
+}
+
+.chat {
+    grid-area: chat;
+    margin: 5px;
+}
+
+.footer {
+    margin: 5px;
+    text-align: center;
+    grid-area: footer;
+}
+
+.container {
+    margin: auto;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header header" "main main chat chat" "footer footer footer footer";
+}
+
+td,
+th {
     padding: 5px;
     border: 1px solid black;
 }
@@ -8,25 +39,89 @@ th {
     background-color: #777;
 }
 
-tr.headerRow{
+tr.headerRow {
     background-color: #bbb;
 }
 
-input{
+.main input {
     width: 75px;
     background-color: inherit;
     border: none;
     border-bottom: 1px dashed #333;
 }
 
-input:focus{
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    /* Firefox */
+}
+
+input:focus {
     outline: none;
 }
 
-col.greyCol{
+col.greyCol {
     background-color: #777;
 }
 
-table{
+table {
     border-collapse: collapse;
+}
+
+.chat .chat-box .username {
+    font-weight: bold;
+    text-decoration: underline;
+    display: inline;
+}
+
+.chat .chat-box .username:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    display: inline;
+    color: #0000A0;
+}
+
+.chat .chat-box {
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+}
+
+.chat .chat-box .chat-text {
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+.chat .chat-box .text {
+    font-size: 1em;
+    width: 50%;
+    margin-right: 2px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: white;
+    padding: 4px 30px;
+}
+
+.chat .chat-box .submit {
+    font-size: 1em!important;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: white;
+    padding: 4px 30px;
+}
+
+.chat .chat-box .submit:hover {
+    color: white;
+    background-color: black;
 }

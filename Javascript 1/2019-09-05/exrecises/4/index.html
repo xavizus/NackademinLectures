@@ -7,160 +7,192 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Yatzy</title>
     <link rel="stylesheet" href="./style.css">
+
+    <script>
+        var messageBody = document.querySelector('.chat-text');
+        messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
+    </script>
 </head>
 
 <body>
-    <table>
+    <div class="container">
+        <div class="header">
+            <h1>Yatzy</h1>
+        </div>
 
-        <!-- Creates a group of colums -->
-        <colgroup>
-            <!--Leave first column empty-->
-            <col>
-            <!-- Assign a class to the second column-->
-            <col span="1" class="greyCol">
-            <!--Leave third column empty-->
-            <col>
-            <!-- Assign a class to the forth column-->
-            <col span="1" class="greyCol">
-            <!--Leave fifth column empty-->
-            <col>
-        </colgroup>
-        <tbody>
-            <tr class="headerRow">
-                <th>Player</th>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>Ones</td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-            </tr>
-            <tr>
-                <td>Twos</td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-            </tr>
-            <tr>
-                <td>Threes</td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-            </tr>
-            <tr>
-                <td>Fours</td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-            </tr>
-            <tr>
-                <td>Fives</td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-            </tr>
-            <tr>
-                <td>Sixes</td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-            </tr>
-            <tr class="headerRow">
-                <th>Sum</th>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-            </tr>
-            <tr class="headerRow">
-                <th>Bonus</th>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-            </tr>
-            <tr>
-                <td>Pair</td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-            </tr>
-            <tr>
-                <td>Two pairs</td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-            </tr>
-            <tr>
-                <td>Three of a kind</td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-            </tr>
-            <tr>
-                <td>Four of a kind</td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-            </tr>
-            <tr>
-                <td>Small straight</td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-            </tr>
-            <tr>
-                <td>Large straight</td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-            </tr>
-            <tr>
-                <td>Full house</td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-            </tr>
-            <tr>
-                <td>Chance</td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-            </tr>
-            <tr>
-                <td>Yatzy</td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-            </tr>
-            <tr class="headerRow">
-                <th>Total</th>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
-            </tr>
-        </tbody>
-    </table>
+        <div class="main">
+            <table>
+                <!-- Creates a group of colums -->
+                <colgroup>
+                    <!--Leave first column empty-->
+                    <col>
+                    <!-- Assign a class to the second column-->
+                    <col span="1" class="greyCol">
+                    <!--Leave third column empty-->
+                    <col>
+                    <!-- Assign a class to the forth column-->
+                    <col span="1" class="greyCol">
+                    <!--Leave fifth column empty-->
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr class="headerRow">
+                        <th>Player</th>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Ones</td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Twos</td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Threes</td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Fours</td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Fives</td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Sixes</td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr class="headerRow">
+                        <th>Sum</th>
+                        <td><input type="number" readonly></td>
+                        <td><input type="number" readonly></td>
+                        <td><input type="number" readonly></td>
+                        <td><input type="number" readonly></td>
+                    </tr>
+                    <tr class="headerRow">
+                        <th>Bonus</th>
+                        <td><input type="number" readonly></td>
+                        <td><input type="number" readonly></td>
+                        <td><input type="number" readonly></td>
+                        <td><input type="number" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>Pair</td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Two pairs</td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Three of a kind</td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Four of a kind</td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Small straight</td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Large straight</td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Full house</td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Chance</td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Yatzy</td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr class="headerRow">
+                        <th>Total</th>
+                        <td><input type="number" readonly></td>
+                        <td><input type="number" readonly></td>
+                        <td><input type="number" readonly></td>
+                        <td><input type="number" readonly></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="chat">
+            <div class="chat-box">
+                <div class="chat-text">
+                    <p>
+                        <div class="username">Stephan</div>: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum vitae ex at interdum. Donec ac dolor condimentum magna pellentesque porta vel quis nulla. Mauris a euismod quam. Etiam sed bibendum justo.
+                        Nunc et tortor diam.</p>
+                    <p>
+                        <div class="username">Alex</div>: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum vitae ex at interdum. Donec ac dolor condimentum magna pellentesque porta vel quis nulla. Mauris a euismod quam. Etiam sed bibendum justo.
+                        Nunc et tortor diam.</p>
+                    <p>
+                        <div class="username">Emil</div>: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum vitae ex at interdum. Donec ac dolor condimentum magna pellentesque porta vel quis nulla. Mauris a euismod quam. Etiam sed bibendum justo.
+                        Nunc et tortor diam.</p>
+                    <p>
+                        <div class="username">Mohammed</div>: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum vitae ex at interdum. Donec ac dolor condimentum magna pellentesque porta vel quis nulla. Mauris a euismod quam. Etiam sed bibendum
+                        justo. Nunc et tortor diam.</p>
+                </div>
+                <input type="text" class="text"><input type="submit" class="submit" value="Skicka">
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
