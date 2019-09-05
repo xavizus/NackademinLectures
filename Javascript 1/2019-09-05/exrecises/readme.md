@@ -29,3 +29,6 @@ Exempel på det du kan göra:
 Yatzy
 Skapa klasser och struktur för att efterlikna eller liknande formulär. Lägg märke till hur de använder färger för at skilja på spelar-kolumner, summeringar mm.
 Sätt lämplig bredd på input-fält.
+- Sidan behöver ett chattrum där användare kan lägga till meddelanden. Lägg in några statiska meddelanden som ni kan styla.
+- som "inloggad" ska man kunna utmana andra spelare (ev från deras profilsidor, typ knapp ""Utmana spelare") och välja att acceptera andras utmaningar
+- Hur skulle en Yatzy-tunering med kompisgänget kunna funka? Be creative.

@@ -258,6 +258,221 @@ Om ett element har flera classer med samma formatering, så kommer den sista for
 </style>
 
 <p>This is a red text</p>
+
+## States
+Det finns flera stats. Exempelvis:
+- hover (visar en css när du håller musen över objektet)
+- focus (När en input ruta markeras)
+- activ (När jag precis trycker på elementet)
+- visted (Om länken är besökt)
+````
+
+## ge flerselektorer samma egenskaper
+
+````html
+<style>
+    p.ingress, button {
+        color: green;
+        border-width: 1px;
+    }
+</style>
+````
+
+## Nästla 
+Det går att nästla styles, så att en specifik element blir påverkad beroende på var 
+````html
+<style>
+.info button { /* Endast knappen under div klassen info kommer bli blå */
+        color: blue;
+}
+</style>
+
+<div class="info">
+    <button>Knapp</button>
+</div>
+
+<div class="something">
+    <button>Knapp</button>
+</div>
+````
+Det fungerar också att ärva klassen från en ovan element ex.
+````html
+<style>
+.info button {
+        color: blue;
+}
+</style>
+
+<div class="info">
+    <div>
+        <button>Knapp</button>
+    </div>
+</div>
+
+````
+
+Det går även att tvinga att endast den som är förälder som man ska kolla på. Det gör man med hjälp av tecknet **>** mellan classen och taggen.
+
+````html
+<style>
+.info > button { /* Se skillnaden */
+        color: blue;
+}
+</style>
+
+<div class="info">
+    <div>
+        <button>Knapp</button> <!-- Denna knapp blir inte blå-->
+    </div>
+    <button>Knapp</button> <!-- Denna knapp blir blå -->
+</div>
+````
+
+## Styla tabeller
+
+````html
+<style>
+tr:nth-child(even) {
+    background-color: lightgrey;
+}
+tr:nth-child(odd) {
+    background-color: yellow;
+}
+</style>
+<table>
+    <tr>
+        <td>Lorem ipsum 1 </td>
+    </tr>
+    <tr>
+        <td>Lorem ipsum 2 </td>
+    </tr>
+    <tr>
+        <td>Lorem ipsum 3 </td>
+    </tr>
+    <tr>
+        <td>Lorem ipsum 4 </td>
+    </tr>
+</table>
+````
+
+## Box modellen
+Alla taggar har en box. En box består av följande:
+- content (Width och height)
+- border (Är runt content)
+- padding (avståndet mellan border och content)
+- margin (avståndet mellan bordern och nästa element)
+
+![alt text](./ExampleImages/3.png "Logo Title Text 1")
+
+##Plasering av element
+- Position
+  - static
+  - relative
+  - absoulte
+  - fixed
+  - sticky (måste ha med -webkit-sticky som position)
+  ````css
+  div {
+      position: -webkit-sticky;
+      position: sticky;
+      top:40;
+  }
+  ````
+
+## CSS enheter
+- px (Är en pixel på skärmen)
+- pt punkter (Skrivare använder detta)
+- mm 
+- em (utgår ifrån fontstorlek på användarens dator).
+
+## Validera CSS
+http://www.css-validator.org/
+
+## CSS Preprocessors
+Är CSS ett programmeringsspråk? Nope.
+
+Det finns flera preprocessors tex. SCSS & 
+Preprocessorer används för att utöka möjligheterna med css t.ex
+- variabler
+- nesting
+- mixins
+- loopar
+- arv
+Det är olika för olika preprocessorer
+
+### SCSS 
+
+#### Variabler
+````scss
+$primary-color: #3bbfce;
+$margin: 16 px;
+
+.content-navifation {
+    border-color: $primary-color;
+    color: darken($primary-color, 10%);
+}
+
+.border {
+    padding: $margin / 2;
+    margin: $margin / 2;
+    border-color: $primary-color;
+}
+````
+
+#### Nesting
+````scss
+table.h1 {
+    margin: 2em 0;
+    td.ln {
+        text-algin: right;
+    }
+}
+
+li {
+    font {
+        family: serif;
+        weight: bold;
+        size: 1.3;
+    }
+}
+````
+
+#### Mixins
+
+````scss
+@mixin table-base {
+    th {
+        text-algin: center;
+        font-weight: bold;
+    }
+    td, th {
+        padding: 2px;
+    }
+}
+
+#data {
+    @include table-base;
+}
+````
+
+#### Loopar
+
+````scss
+$suareCount: 3
+@for $i from 1 through $squareCount 
+    #square-#{$i}
+````
+
+#### Arv
+
+````scss
+.error
+    border: 1px #F00
+    background: #FDD
+
+.badError
+    @extend .error
+    border-width: 3px;
 ````
 # Projekt
 
