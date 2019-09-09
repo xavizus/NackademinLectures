@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Transitions</title>
+
+    <script>
+        function updateTransition() { //Funktionen ändrar classen beroende på vad det är för klass.
+            var el = document.querySelector("div.box1"); //leta efter en class som heter box1
+            
+            if (el) { //Om en class är matchad mot box1
+                el.className = "box2"; //Änra class till box2 (Vilket aktiverar animationen)
+            } 
+            //Annars: 
+            else {
+                 el = document.querySelector("div.box2"); //leta efter classen box2
+                 el.className = "box1"; //Ändra class till box1
+            }
+   
+            return el;
+        }
+        //Skapar en lyssnare med en anonymn funktion
+        document.addEventListener("DOMContentLoaded", function(e) {
+	        document.getElementById("box").addEventListener("click", updateTransition); //hämta en div med id box. lägg till event som lyssnar efter click. Om en klick sker, kör funktionen updateTransition
+        });
+
+    </script>
+</head>
+<body>
+    <div>
+        <div class="boxold"></div>
+    </div>
+    <div>
+        <div id="box" class="box1">Lorem, ipsum.</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+body {
+    background-color: #333;
+}
+.boxold {
+    background: white;
+    width: 300px;
+    height: 300px;
+    position: relative;
+
+    transition-property: background, border-radius, transform; /* Vilka attribute vi skall göra övergån på */
+    transition-duration: 1s; /* Hur länge det tar att göra övergången*/
+    transition-delay: 1s; /* Hur länge det ska ta innan vi utför övergången*/
+    transition-timing-function: ease-in; /* Börjar övergången snabbt, och saktar in på slutet. */
+}
+
+.boxold:hover {
+    background: #880033;
+    border-radius: 50%;
+    transform: rotateY(180deg); /* Roterar bilden 180grader på Z-axeln */
+}
+
+.box1 {
+    background: white;
+    top: 5px;
+    width: 300px;
+    height: 300px;
+    left:0;
+    position: relative;
+    transition: all 1s ease; /* En shorthand kod. Första säger parametern säger "Ta alla objekt", "utför övergången i 1 sekund, och använd övergångsberäkningen ease*/
+}
+
+.box2 {
+    background: white;
+    top: 320px;
+    width: 300px;
+    height: 300px;
+    left: 300px;
+    position: relative;
+    transform: rotate(270deg); /* Rotera bilden 270 grader */
+    transition: all 1s ease; 
+}
