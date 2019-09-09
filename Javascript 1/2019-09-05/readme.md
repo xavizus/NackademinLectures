@@ -364,7 +364,7 @@ Alla taggar har en box. En box består av följande:
 
 ![alt text](./ExampleImages/3.png "Logo Title Text 1")
 
-##Plasering av element
+## Plasering av element
 - Position
   - static
   - relative
