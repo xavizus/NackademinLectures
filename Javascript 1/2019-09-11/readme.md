@@ -202,10 +202,10 @@ Git log skriver ut alla våra commits
 Kommando:
 - `--oneline` visar allt i förkortat läge
 - `--stat` visar en sammanfattning av borttagningar och tillägg i varje fil
-- ``
+- `--decroate` (Gör inget nu mera då det är default igång från och med GIT version 2.1).
 - `-p` visar faktiskta ändrignar i koden.
 - `--shortlog` visar v
-- `git log --graph --oneline --decorate` visar en lite grafiskt vy vad som har hänt med brancher.
+- `git log --graph --oneline` visar en lite grafiskt vy vad som har hänt med brancher.
 
 Det går att filtrera
 - `git log -3` 3 sensate commits
@@ -213,3 +213,65 @@ Det går att filtrera
 - Söka på meddelanden `git log --grep="JRA-224:`
 - Visa loggar på specifik fil `git log -- foo.py bar.py`
 - På innehåll `git log -S"Hello Word"`, `git log -G"<regex>"`
+
+## Pull Request
+En Pull Request är ett sätt att samarbeta. Det är väldigt vanligt att open soruce-projekt tillåter PR som ett sätt att ta emot hjälp från utomstående.
+
+I sin enklaste form är det en notifikation som berättar för utvecklarne att någon vill att hen ska dra ner ändringarna.
+
+Vad man behöver känna till
+- Källans repo & branch
+- Destinationens repo & branch
+
+**Gör sjätte uppgiften under exercises**
+
+### Github
+
+För att kunna göra en pull request i github, så behöver du göra en fork av ordinarie repo. Det gör du genom att klicka på "Fork".
+
+![alt text](./Images/git-fork-1.png "Bilden senaste commiten")
+
+
+## Branchningtekniker
+Här kommer ett par branching tekniker för användning i git med teams för att kunna arbeta effektivt.
+
+Det är viktigt att känna till att det inte finns en strategi som fungear för alla teams.
+
+### Centraliserad workflow
+
+
+### Feature branching
+Idén bygger på att nya features utvecklas i egna branches. Det gör att utvecklare kan jobba på samma eller olika funktioner samtidigt utan störa varandras arbeten eller själva produktionskoden.
+
+Master branchen ska då aldrig innehålla kod som inte fungerar. Vilket underlättar Continuous Integration.
+
+### Gitflow
+Gitflow utgår från en model baserad på projektrelease. Det är i grund och botten feature branching men med specifika roller för olika brancher och hur dem integrerar.
+
+## Git hooks
+Git hooks är script som körs atuomatiskt varje gång en speciell händelse inträffar i repot. Man göra allt som går att göra i ett shell script (Bash (Gäller endast linux)).
+
+Hooks är vanliga filer som finns i .git/hooks-mappen i repot.
+
+- applypatch-msg.sample 
+- pre-push.sample
+- commit-msg.sample
+- pre-rebase.sample
+- post-update.sample
+- prepare-commit-msg.sample
+- pre-applypatch.sample
+- update.sample
+- pre-commit.sample
+
+Hooks på server sidan:
+- pre-receive
+- update
+- post-receive
+
+Hooks clonas inte som vanliga filer. Läsning kan t.ex. vara att lägga filerna i working directory och kopierar dem eller symlänka dem.
+För att symlänka i linux. Så skriver du `ln -s <namnet på filen> <namnet på genvägen>`
+
+**Gör sjunde uppgiften under exercises**
+
+## Git LFS
+Git LFS står för Large File Storage. Det är ett plugin / extenstion för git. Den används främst för att ladda ner stora filer 

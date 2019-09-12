@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ehco "This is a nice commit!"
