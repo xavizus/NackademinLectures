@@ -48,3 +48,38 @@ Genomgång av allt vi hittills gått igenom. Samt gått igenom HTML.
 
 - [X] Övat
 - [X] Repeterat
+
+# **2019-09-05**
+## **Sammanfattning**
+
+## Att göra:
+- [] Övat
+- [] Repeterat
+
+# **2019-09-06**
+## **Sammanfattning**
+
+## Att göra:
+- [] Övat
+- [] Repeterat
+
+# **2019-09-09**
+## **Sammanfattning**
+
+## Att göra:
+- [] Övat
+- [] Repeterat
+
+# **2019-09-10**
+## **Sammanfattning**
+
+## Att göra:
+- [] Övat
+- [] Repeterat
+
+# **2019-09-11**
+## **Sammanfattning**
+
+## Att göra:
+- [] Övat
+- [] Repeterat
