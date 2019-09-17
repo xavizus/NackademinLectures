@@ -51,35 +51,42 @@ Genomgång av allt vi hittills gått igenom. Samt gått igenom HTML.
 
 # **2019-09-05**
 ## **Sammanfattning**
-
+Genomgång av HTML och CSS, där vi tittade närmare på table och formulär.
 ## Att göra:
-- [] Övat
-- [] Repeterat
+- [X] Övat
+- [X] Repeterat
 
 # **2019-09-06**
 ## **Sammanfattning**
-
+Genomgång av GIT och hur du använder det lokalt på din dator
 ## Att göra:
-- [] Övat
-- [] Repeterat
+- [X] Övat
+- [X] Repeterat
 
 # **2019-09-09**
 ## **Sammanfattning**
-
+Mer genomgång av CSS, riktat mot transitioner och animationer med hjälp av CSS.
 ## Att göra:
-- [] Övat
-- [] Repeterat
+- [X] Övat
+- [X] Repeterat
 
 # **2019-09-10**
 ## **Sammanfattning**
-
+Genomgång av webbformulär och skapa interaktioner med hjälp av javascirpt samt gick igenom vad DOM är för något.
 ## Att göra:
-- [] Övat
-- [] Repeterat
+- [X] Övat
+- [X] Repeterat
 
 # **2019-09-11**
 ## **Sammanfattning**
-
+Genomgång av GIT igen, fast med mer avancerat samt uppsättning av GitHub. Där vi kunde lägga till ett externt repository, istället för att lagra det lokalt endast.
 ## Att göra:
-- [] Övat
-- [] Repeterat
+- [x] Övat
+- [x] Repeterat
+
+# **2019-09-19**
+## **Sammanfattning**
+Gick igenom mer om DOM och hur man hämtar data från fält som saknade id-attributet. Samt genom gång av array-metoder.
+## Att göra:
+- [x] Övat
+- [x] Repeterat
