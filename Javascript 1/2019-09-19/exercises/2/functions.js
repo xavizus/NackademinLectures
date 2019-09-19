@@ -60,20 +60,55 @@ document.addEventListener("DOMContentLoaded", function(e) {
     });
 });
 
+
+//Load when the document has been loaded.
 $(function() {
+
+    // Set commentIndex
     let commentIndex = 0;
+
+    // Listen for submit button
     $("#submit_comment").click(function() {
+
+        //Get commentor name
         let name = document.getElementById("comment_name").value;
+
+        //Get commentor comment
         let comment = document.getElementById("comment").value;
+
+        //Add a div box for the comment and give it a commentID.
         $("#comments").append("<div id='commentID-" + commentIndex + "'></div>");
+
+        // Store the commentors Name in a span with commentName class.
         name = $("<span class='commentName'></span>").text(name + ": ");
+
+        // Store a paragraph with the class comment and the commentor comment.
         comment = $("<p class='comment'> </p>").text(comment);
+
+        // Store a remove button to be able to remove the comment
         removeButton = $("<button class='removeComment' >Remove</button>");
+
+        // Add the comment to the comment box.
         $("#commentID-" + commentIndex).append(name, comment, removeButton);
         commentIndex++;
     });
 
+    //Listen for click event on the removeComment class.
     $(document).on("click", ".removeComment", function() {
+        // This row of code is a bit difficult to wrap your head around if you are not an experienced programmer.
+
+        //the keyword this, means the button element.
+        //parent function mean, the element above the this parrent
+        //remove, selfexplained.
         $(this).parent().remove();
+
+        //This is an example output to the HTML-page after you have submitted a comment.
+        /*
+        <div id="commentID-0"> <---- When we use parent for this keyword, it's pointet do this element. So when we remove this element, everything below gets removed.
+            <span class="commentName">Stephan: </span>
+            <p class="comment">Detta är en kommentar</p>
+            <button class="removeComment">Remove</button> <---- The keyword this, points to this element.
+        </div>
+        */
     });
 });
