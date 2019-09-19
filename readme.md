@@ -84,9 +84,17 @@ Genomgång av GIT igen, fast med mer avancerat samt uppsättning av GitHub. Där
 - [x] Övat
 - [x] Repeterat
 
-# **2019-09-19**
+# **2019-09-17**
 ## **Sammanfattning**
 Gick igenom mer om DOM och hur man hämtar data från fält som saknade id-attributet. Samt genom gång av array-metoder.
+## Att göra:
+- [x] Övat
+- [x] Repeterat
+
+# **2019-09-19**
+## **Sammanfattning**
+Gick igenom jQuery, JSON och API samt väldigt kort om att spara data hos klienten.
+
 ## Att göra:
 - [x] Övat
 - [x] Repeterat
