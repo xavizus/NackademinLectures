@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="se">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="functions.js"></script>
+    <title>Min första hemsida</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item-a">
+            <h1>Presentation av mig själv</h1>
+        </div>
+        <main class="item-b">
+            <p>Mitt namn är Stephan Ljungros. Jag har ett brinnade intresse när det kommer till IT. Jag håller på mycket med mina privata servrar för att fördjupa mig i olika sätt.
+            </p>
+            <img class="img-fluid" src="canvas.png" alt="Bild på Stephan">
+            <p>Mina hobbies är:</p>
+            <ul class="list-group">
+                <li class="list-group-item">Fikse</li>
+                <li class="list-group-item">Programmering</li>
+                <li class="list-group-item">Servrar</li>
+                <li class="list-group-item">Spel (Dock har det minskat rejält)</li>
+            </ul>
+        </main>
+        <div class="form">
+            <h2>Berätta om dig själv:</h2>
+            <form method="POST">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="name">Namn</label>
+                    </div>
+                    <div class="col-75">
+                        <input id="name" type="text"><br>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <label for="password">Lösenord</label>
+                </div>
+                <div class="col-75">
+                    <input id="password" type="password"><br>
+                </div>
+                <div class="col-25">
+                    <label for="birthday">Födelsedatum</label>
+                </div>
+
+                <div class="col-75"><input id="birthday" type="date"><br>
+                </div>
+
+                <div class="col-25">
+                    <label for="email">E-post</label>
+                </div>
+
+                <div class="col-75"><input id="email" type="email"> <br></div>
+
+
+                <div class="col-25"><label for="age">Ålder</label></div>
+
+                <div class="col-75"><input id="age" type="number"><br></div>
+
+
+                <div class="col-25"><label for="presentation">Personlig Presentation</label></div>
+
+                <div class="col-75"> <textarea id="presentation" placeholder="Skriv om dig själv"></textarea><br></div>
+
+
+                <div class="col-25"><label for="favoriteColor">Favoritfärg</label></div>
+
+                <div class="col-75"><input id="favoriteColor" type="color"><br></div>
+
+
+                <div class="col-25"><label for="favoriteWeekday">Favoritveckodag</label></div>
+
+                <div class="col-75"><select id="favoriteWeekday">
+                    <option value="monday">Måndag</option>
+                    <option value="thusday">Tisdag</option>
+                    <option value="wensday">Onsdag</option>
+                    <option value="thursday">Torsdag</option>
+                    <option value="friday">Fredag</option>
+                    <option value="sauterday">Lördag</option>
+                    <option value="sunday">Söndag</option>
+                </select><br></div>
+
+
+                <div class="col-25"><label>Mac, PC eller konsol? </label> <br></div>
+
+                <div class="col-75">
+                    <input id="PC" type="radio" name="computer" value="PC"> <label for="PC">PC Master Race</label> <br>
+                    <input id="Mac" type="radio" name="computer" value="Mac"><label for="Mac">Mac</label> <br>
+                    <input id="console" type="radio" name="computer" value="Console"><label for="console">Console peasant</label> <br>
+                </div>
+
+                <div class="col-25">
+                    <label for="tvseries">TV-serier</label>
+                </div>
+
+                <div class="col-75">
+                    <input id="Hemtillmidgard" type="checkbox" name="tvseries" value="Hem till Midgård"><label for="Hemtillmidgard">Hem till midgård</label> <br>
+                    <input id="Darkerthanblack" type="checkbox" name="tvseries" value="Darker than black"><label for="Darkerthanblack">Darker than black</label> <br>
+                    <input id="CodeGeass" type="checkbox" name="tvseries" value="Code Geass"><label for="CodeGeass">Code Geass</label> <br>
+
+                </div>
+                <div id="submit" class="submit">Skicka</div>
+            </form>
+        </div>
+
+        <section class="item-c">
+            <h2>Navigation</h2>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="hobby.html">Hobbies</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.xavizus.com">xavizus.com</a>
+                </li>
+                <li class="nav-item">
+                    <a href="CV_svenska.docx">CV</a>
+                </li>
+            </ul>
+
+            <div id="presentation-text">
+
+            </div>
+        </section>
+
+        <div class="item-e">
+            <form>
+                <div class="col-25">
+                    <label for="comment_name">Ditt namn:</label>
+                </div>
+                <div class="col-75">
+                    <input id="comment_name">
+                </div>
+                <div class="col-25">
+                    <label for="comment">Din kommentar</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="comment"></textarea>
+                </div>
+                <div class="submit" id="submit_comment">Lägg till kommentar</div>
+            </form>
+        </div>
+
+        <div class="item-f">
+            <div id="comments"></div>
+
+        </div>
+
+        <div class="item-d">
+            &copy;
+            <div class="copyrightName">Stephan Ljungros</div> 2019
+        </div>
+    </div>
+</body>
+
+</html>
