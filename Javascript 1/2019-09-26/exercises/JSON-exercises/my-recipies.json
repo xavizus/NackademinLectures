@@ -1,0 +1,57 @@
+{
+    "Tjärlknul": {
+        "Ingredienser": [{
+                "livsmedel": "Djupfryst Nöt- älg elle hjortkött",
+                "kvantitet": 1.5,
+                "SI": "KG"
+            },
+            {
+                "livsmedel": "Vatten",
+                "kvantitet": 1,
+                "SI": "L"
+            },
+            {
+                "livsmedel": "Salt",
+                "kvantitet": 1,
+                "SI": "DL"
+            },
+            {
+                "livsmedel": "Socker",
+                "kvantitet": 1,
+                "SI": "TSK"
+            },
+            {
+                "livsmedel": "Svartpeppar Krossad",
+                "kvantitet": 1,
+                "SI": "TSK"
+            },
+            {
+                "livsmedel": "Smulat lagerblad",
+                "kvantitet": 1,
+                "SI": "st"
+            },
+            {
+                "livsmedel": "Krossade enbär",
+                "kvantitet": 15,
+                "SI": "st"
+            }
+
+
+        ],
+        "Tid och tempratur": [
+            "Ugn: 75-100 C",
+            "Tid: 24 timmar"
+        ],
+        "Tillvägagångsätt": [
+            "Lägg det frysta köttet i en ugnsäkert form eller stekpanna",
+            "Sätt in köttet i nedre delen i ugnen",
+            "Efter 2-3 timmar bör köttet ha tinat, stick in en köttermometer. Spetsen av termometern skall placeras i den tjockaste delen",
+            "Låt köttet stå i ugnen 10-12 timmar",
+            "När termometern visar 60 C, är köttet rött inuti, vid 70 C är det rosa och 75 C är det genomstekt. Rekommenderas 60 C",
+            "Koka lagen i 3-4 minuter. Låt den svalna lite.",
+            "Häll över lagen, som då ska täcka köttet.",
+            "Låt det svalna lite, täck sedan över och ställ det kallt ca 5 timmar.",
+            "Ta upp köttet och förvara det utan lag"
+        ]
+    }
+}

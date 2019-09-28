@@ -1,0 +1,119 @@
+body {
+    background-color: #000;
+    font-size: 1.0em
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.container>* {
+    flex: 1 100%;
+}
+
+.navbar {
+    background-color: #222;
+    color: #FFF;
+}
+
+.content {
+    background-color: #333;
+    color: #FFF;
+    width: 50%;
+}
+
+.sidemenu {
+    background-color: #555;
+    color: #FFF;
+}
+
+.footer {
+    background-color: #484848;
+    text-align: center;
+    color: #D6898E;
+}
+
+@media all and (min-width: 600px) {
+    .shareRow {
+        flex: 1 auto;
+    }
+}
+
+
+/*
+|---------------------
+|= Navigation
+|---------------------
+*/
+
+.navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: #FFF;
+}
+
+.navigation a:hover {
+    background: #333;
+}
+
+@media screen and (max-width: 800px) {
+    .navigation {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navigation {
+        flex-flow: column;
+        text-align: center;
+    }
+    .navigation a,
+    .sidemenu a {
+        border-style: solid;
+        border-color: #C0C0C0;
+        margin: 2px;
+    }
+}
+
+
+/*
+|---------------------
+|= sidemenu
+|---------------------
+*/
+
+.sidemenu {
+    display: flex;
+    flex: 1 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+    flex-flow: column;
+    text-align: center;
+}
+
+.sidemenu a {
+    padding: 1em;
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.sidemenu a:hover {
+    color: #D6898E;
+    background-color: #666;
+}
