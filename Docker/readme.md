@@ -1,0 +1,1 @@
+Detta går igenom hur du installerar docker på CentOS 7 och hur du enkelt kan använda dig av docker.
