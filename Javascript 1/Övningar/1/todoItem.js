@@ -1,11 +1,11 @@
-class todoItem {
+class TodoItem {
     constructor(itemId, title) {
         this.title = title;
         this.itemId = itemId;
         this.isArchived = false;
     }
 
-    isTodoItemArchived() {
+    todoItemArchived() {
         return this.isArchived;
     }
 
