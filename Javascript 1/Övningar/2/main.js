@@ -17,6 +17,17 @@ function generateNumbers(totalNumbers) {
     return randomNumbers;
 }
 
+function createUlElement(arrayOfStrings) {
+    let ul = document.createElement("ul");
+        for(let string of arrayOfStrings) {
+            let li = document.createElement("li");
+            let textNode = document.createTextNode(string);
+            li.appendChild(textNode);
+            ul.appendChild(li);
+        }
+    return ul;
+}
+
 function getGuessedUserInput(lotteryNumbers) {
     return function() {
         let userInputs = document.getElementsByClassName("guessedValue");
@@ -26,12 +37,23 @@ function getGuessedUserInput(lotteryNumbers) {
                 guessedNumbers = [...guessedNumbers, userInput.valueAsNumber];
             }
         }
-        let matched = lotteryNumbers.filter(res => guessedNumbers.includes(res));
+        let matches = lotteryNumbers.filter(res => guessedNumbers.includes(res));
 
-        console.log(matched);
+        document.getElementById("correctGuesses").innerHTML = "";
+        document.getElementById("lotteryNumbers").innerHTML = "";
+        let correctGuessesElements = createUlElement(matches);
+        document.getElementById("correctGuesses").appendChild(correctGuessesElements);
+
+        let lotteryNumbersElements = createUlElement(lotteryNumbers);
+        document.getElementById("lotteryNumbers").appendChild(lotteryNumbersElements);
+
+        
+        console.log(matches);
 
         console.table(lotteryNumbers);
         lotteryNumbers = generateNumbers(7);
+
+
     }
 }
 
