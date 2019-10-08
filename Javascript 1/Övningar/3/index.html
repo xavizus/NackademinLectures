@@ -5,12 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./tv.js"></script>
     <script src="./main.js"></script>
     <title>Document</title>
 </head>
 
 <body>
 
+    <table id="calculator">
+        <tr>
+            <td><label for="aspectRatio">Aspect Ratio:</label></td>
+            <td><select id="aspectRatio">
+                    <option value="16:9">16:9</option>
+                    <option value="4:3">4:3</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td><label>Bredd: (i cm) </td>
+            <td><input id="width" type="number"></label></td>
+        </tr>
+        <tr>
+            <td><label>Höjd: (i cm) </td>
+            <td><input id="height" type="number"></label></td>
+        </tr>
+    </table>
+    <div id="maxsizeOfTv"></div>
 </body>
 
 </html>
