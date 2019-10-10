@@ -1,0 +1,105 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    padding: 5px;
+    background-color: lightgray;
+}
+
+header, #content,  #about, #popularpost, #followme {
+    background-color: white;
+}
+
+#wrapper {
+    padding: 10px;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "navbar"
+        "main"
+        "footer";
+    grid-template-columns: 4fr;
+    grid-template-rows: auto;
+}
+
+header {
+    padding: 5px;
+    grid-area: header;
+    text-align: center;
+
+}
+
+header h1 {
+    font-weight: bolder;
+}
+
+header h1, header p {
+    padding: 10px;
+}
+
+nav {
+    grid-area: navbar;
+    padding: 5px;
+    background-color: #111;
+    color: white;
+}
+
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    /* float: left; */
+}
+
+#navbar li {
+    float:left;
+    padding: 5px;
+}
+
+#navbar li:last-child {
+    float: right;
+} 
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+        "content sidebar";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.image {
+    background-color: dimgray;
+    width: 100%;
+    height: 300px;
+    /* padding: 10px; */
+}
+
+#content {
+    grid-area: content;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+#sidebar {
+    grid-area: sidebar;
+    padding: 10px;
+    padding-right: 0px;
+}
+
+#about, #popularpost, #followme {
+    padding: 15px;
+    margin-top: 10px;
+}
+
+#about {
+    margin-top: 0px;
+}
+
+footer {
+    grid-area: footer;
+    padding: 5px;
+    background-color: darkgrey;
+}
