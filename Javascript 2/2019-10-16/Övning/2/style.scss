@@ -1,0 +1,42 @@
+$background-color: #333;
+$text-color: #FFF;
+$width: 100px;
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+}
+
+h1 {
+    color: darken($text-color, 20%);
+}
+
+tr,
+td {
+    border: 1px #000 solid;
+}
+
+#data {
+    width: $width * 8;
+    margin: auto;
+}
+
+@mixin circle($size: 25px) {
+    width: $size;
+    height: $size;
+    border-radius: 50%
+}
+
+.small-circle {
+    background-color: red;
+    @include circle()
+}
+
+.big-circle {
+    background-color: #666;
+    @include circle(100px);
+}

@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #333;
+  color: #FFF;
+}
+h1 {
+  color: #cccccc;
+}
+tr,
+td {
+  border: 1px #000 solid;
+}
+#data {
+  width: 800px;
+  margin: auto;
+}
+.small-circle {
+  background-color: red;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.big-circle {
+  background-color: #666;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
