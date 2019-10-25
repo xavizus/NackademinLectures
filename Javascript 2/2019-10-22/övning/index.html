@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Tillgänglighet</title>
+</head>
+
+<body>
+
+    <form class="needs-validation" novalidate>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="validationCustom01">Förnamn</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Förnamn" aria-describedby="firstNameHelpBlock" required>
+                <small id="firstNameHelpBlock" class="form-text text-muted">
+                        Ange ditt förnamn. Det vill säga, vad du heter.
+                      </small>
+                <div class="invalid-feedback">
+                    Ange ett förnamn
+                </div>
+                <div class="valid-feedback">
+                    Bra jobbat!
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationCustom02">Efternamn</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Efternamn" aria-describedby="lastNameHelpBlock" required>
+                <small id="lastNameHelpBlock" class="form-text text-muted">
+                        Ange ditt efternamn. Det vill säga, ditt familjnamn.
+                      </small>
+                <div class="invalid-feedback">
+                    Ange ett efternamn
+                </div>
+                <div class="valid-feedback">
+                    Bra jobbat!
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationCustomSecurityNumber">Personnummer</label>
+                <input type="text" class="form-control" id="validationCustomSecurityNumber" placeholder="Personnummer" aria-describedby="securityNumberHelpBlock" required>
+                <small id="securityNumberHelpBlock" class="form-text text-muted">
+                            Ange ditt personnummer (10 siffror). Ex: YYMMDD-NNNN
+                          </small>
+                <div class="invalid-feedback">
+                    Ange ditt personnummer
+                </div>
+                <div class="valid-feedback">
+                    Bra jobbat!
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom03">Adress</label>
+                <input type="text" class="form-control" id="validationCustom03" placeholder="Adress" aria-describedby="addressHelpBlock" required>
+                <small id="addressHelpBlock" class="form-text text-muted">
+                        Ange din gatuadress, dvs. där du bor.
+                      </small>
+                <div class="invalid-feedback">
+                    Ange gatuadress
+                </div>
+                <div class="valid-feedback">
+                    Bra jobbat!
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="validationCustom04">Postnummer</label>
+                <input type="text" class="form-control" id="validationCustom04" placeholder="Postnummer" aria-describedby="zipcodeHelpBlock" required>
+                <small id="zipcodeHelpBlock" class="form-text text-muted">
+                        Ange ditt postnummer.
+                      </small>
+                <div class="invalid-feedback">
+                    Ange postnummer
+                </div>
+                <div class="valid-feedback">
+                    Bra jobbat!
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="validationCustom05">Postort</label>
+                <input type="text" class="form-control" id="validationCustom05" placeholder="Postort" aria-describedby="stateHelpBlock" required>
+                <small id="stateHelpBlock" class="form-text text-muted">
+                        Ange din postort.
+                      </small>
+                <div class="invalid-feedback">
+                    Ange postort
+                </div>
+                <div class="valid-feedback">
+                    Bra jobbat!
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom06">Postort</label>
+                <select class="form-control" id="validationCustom06" aria-describedby="genderHelpBlock" required>
+                        <option>Man</option>
+                        <option value="">Kvinna</option>
+                    </select>
+
+                <small id="genderHelpBlock" class="form-text text-muted">
+                            Ange ditt kön. Det finns bara två!
+                          </small>
+                <div class="invalid-feedback">
+                    Ange ditt kön!
+                </div>
+                <div class="valid-feedback">
+                    Bra jobbat!
+                </div>
+            </div>
+        </div>
+        <button id="sendForm" class="btn btn-primary" type="submit">Skicka</button>
+    </form>
+</body>
+
+</html>
