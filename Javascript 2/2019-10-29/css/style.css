@@ -1,0 +1,18 @@
+.cellWhite {
+    background-color: #FFF;
+}
+
+.cellBlack {
+    background-color: #444;
+}
+
+.container {
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(8, 80px);
+    grid-template-rows: repeat(8, 80px);
+}
+
+.marked {
+    border: 4px red dotted;
+}
