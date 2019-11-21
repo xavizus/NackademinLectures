@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>toDoList</title>
+</head>
+<form action="/todoList/add" method="post">
+    <label for="todItem">Add a Todo item: <input type="text" name="todoItem" id=""></label>
+    <input type="submit" value="Add">
+</form>
+
+<% if(locals.content) { %>
+    <ul>
+        <% for(let i = 0; i < content.length;i++) { %>
+            <li>
+                <a href="/todoList/delete/<%= content[i].id %>">
+                    <%= content[i].todoItem %>
+                </a>
+            </li>
+            <% } %>
+    </ul>
+    <% } %>
+
+        <body>
+
+        </body>
+
+</html>

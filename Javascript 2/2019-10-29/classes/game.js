@@ -27,7 +27,7 @@ class Game {
                     $(".marked").removeClass("marked");
                 }
                 // Else if clicked id is not a piece, and moveTo is null
-            } else if (!this.getPieceFromId(event.target.id) && this.moveTo == null) {
+            } else if (!this.getPieceFromId(event.target.id) && this.moveFrom != null) {
                 $(".marked").removeClass("marked");
 
                 //move the piece
@@ -71,9 +71,9 @@ class Game {
                         moves: this.selected_piece.moves
                     });
                     this.selected_piece = null;
+                } else {
+                    console.log(toId);
                 }
-
-                console.log(character + (Number(row) + 1));
                 character = String.fromCharCode(character.charCodeAt(0) + 1);
             }
 
