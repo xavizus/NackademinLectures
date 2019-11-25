@@ -66,16 +66,29 @@
                 return false;
             });
 
-            $('#m').on('change', () => {
+            $('#m').keyup(() => {
                 socket.emit('isTyping', `${$('#nickname').val()} is typing`);
-            })
+            });
 
             socket.on('isTyping', (msg) => {
                 $('#typing').text(msg);
+                setTimeout(() => {
+                    $('#typing').text("");
+                }, 1000);
             });
 
             socket.on('chat message', msg => {
                 $('#messages').append($('<li>').text(msg));
+            });
+            $(window).on("beforeunload", () => {
+                socket.emit('test', $('#nickname').val());
+            });
+
+            socket.on('online users', (users) => {
+                $('#online').empty();
+                for (let user of users) {
+                    $('#online').append($('<p>').text(user));
+                }
             });
         });
     </script>
@@ -83,6 +96,7 @@
 
 <body>
     <ul id="messages"></ul>
+    <div id="online"></div>
     <div id="typing"></div>
     <form action="">
         <input name="nickname" id="nickname" placeholder="Nickname">
