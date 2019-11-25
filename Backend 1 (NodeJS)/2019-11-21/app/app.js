@@ -20,7 +20,12 @@ app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 app.use(express.urlencoded());
 app.use(express.json());
-app.use(session({ secret: 'someRandomSecret' }));
+app.use(session({
+    secret: 'someRandomSecret',
+    cookie: {
+        maxAge: 14 * 24 * 60 * 60 * 1000
+    }
+}));
 
 app.get('/todoList', (req, res) => {
     if (!req.session) {
