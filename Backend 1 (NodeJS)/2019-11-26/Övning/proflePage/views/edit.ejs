@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <% include ./partials/head %>
+</head>
+
+<body>
+
+    <form action="/update-profile" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="name">Your dick name</label>
+            <input type="text" name="name" class="form-control" placeholder="Enter your dick name here">
+            <small class="form-text text-muted">We'll never share your dick name with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="mail">Your dick email</label>
+            <input class="form-control" type="email" name="mail" name="mail">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="profilePic">Example file input</label>
+            <input type="file" name="profilePic" class="form-control-file">
+        </div>
+        <input type="submit" class="btn btn-primary">
+    </form>
+</body>
+
+</html>

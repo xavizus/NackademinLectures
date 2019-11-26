@@ -6,7 +6,7 @@ const client = net.connect(port, address, () => {
     let handshake = Buffer.from([0x00, 0x04]);
     let serverAddressLenght = Buffer.from(String.fromCharCode(address.length));
     let serverAddress = Buffer.from(address);
-    let portNumber = Buffer.alloc(16, [port], "utf16le");
+    let portNumber = Buffer.from((25566).toString(16), 'hex');
     console.log(portNumber);
     let statusRequest = Buffer.from([0x01]);
     let settings = [handshake, serverAddressLenght, serverAddress, portNumber, statusRequest];

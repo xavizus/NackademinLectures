@@ -1,0 +1,112 @@
+{
+    "customers": [{
+            "id": 1,
+            "name": "Stephan",
+            "company": "Xavizus",
+            "city": "Stockholm",
+            "orders": [{
+                    "id": 1,
+                    "products": [{
+                            "id": 1,
+                            "productName": "Cola 2L",
+                            "amout": 24
+                        },
+                        {
+                            "id": 2,
+                            "productName": "Candy",
+                            "amout": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "products": [{
+                            "id": 3,
+                            "productName": "Banan",
+                            "amout": 0
+                        },
+                        {
+                            "id": 1,
+                            "productName": "Cola 2L",
+                            "amout": 10
+                        }
+                    ]
+                }
+
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Alexander",
+            "company": "MSI",
+            "city": "Helvetet",
+            "orders": [{
+                    "id": 3,
+                    "products": [{
+                            "id": 1,
+                            "productName": "Cola 2L",
+                            "amout": 24
+                        },
+                        {
+                            "id": 2,
+                            "productName": "Candy",
+                            "amout": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "products": [{
+                            "id": 3,
+                            "productName": "Banan",
+                            "amout": 0
+                        },
+                        {
+                            "id": 1,
+                            "productName": "Cola 2L",
+                            "amout": 10
+                        }
+                    ]
+                }
+
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Jonas",
+            "company": "Lenovo",
+            "city": "Himelen",
+            "orders": [{
+                    "id": 3,
+                    "products": [{
+                            "id": 1,
+                            "productName": "Cola 2L",
+                            "amout": 24
+                        },
+                        {
+                            "id": 2,
+                            "productName": "Candy",
+                            "amout": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "products": [{
+                            "id": 3,
+                            "productName": "Banan",
+                            "amout": 0
+                        },
+                        {
+                            "id": 1,
+                            "productName": "Cola 2L",
+                            "amout": 10
+                        }
+                    ]
+                }
+
+            ]
+        }
+
+    ]
+}
