@@ -1,0 +1,15 @@
+{
+  "name": "2-Exercise",
+  "version": "1.0.0",
+  "description": "Med NeDB:\r - Skapa, redigera, och ta bort dokument.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nedb": "^1.8.0"
+  }
+}

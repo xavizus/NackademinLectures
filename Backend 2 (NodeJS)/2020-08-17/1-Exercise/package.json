@@ -1,0 +1,15 @@
+{
+  "name": "1-Exercise",
+  "version": "1.0.0",
+  "description": "Enkel express server med tre routes\r - En som svarar med text\r - En som svarar med JSON\r - En som svarar med en fil.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
