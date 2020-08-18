@@ -11,15 +11,15 @@ app.get('/text', (req, res) => {
 
 app.get('/json', (req, res) => {
     res.json({
-            person: {
-                age: 29,
-                name: "Stephan"
-            }
-        });
+        person: {
+            age: 29,
+            name: "Stephan"
+        }
+    });
 });
 
 app.get('/file', (req, res) => {
-   res.download('default.png');
+    res.download('default.png');
 });
 
 app.listen(port, () => {
